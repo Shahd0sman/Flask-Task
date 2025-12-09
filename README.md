@@ -22,26 +22,26 @@ Follow these steps to get the project running locally:
 
 ```bash
 git clone https://github.com/Shahd0sman/flask-game-project.git
+```
+2. **Go to project directory**
+``` cd "flask-game-project" ```
 
-1- Go to project directory
-cd "flask-game-project"
+3. **Create a virtual environment (optional but recommended)**
+```python -m venv venv``
 
-2- Create a virtual environment (optional but recommended)
-python -m venv venv
-
-3- Activate the virtual environment
+4. **Activate the virtual environment**
 On Windows:
-venv\Scripts\activate
+```venv\Scripts\activate```
 On macOS/Linux:
-source venv/bin/activate
+source ```venv/bin/activate```
 
-4- Install dependencies
-pip install -r requirements.txt
+5. **Install dependencies**
+```pip install -r requirements.txt```
 
-5- Run the Flask app
-python home.py
+6. **Run the Flask app**
+```python home.py```
 
-The app will run on http://127.0.0.1:5000/
+The app will run on ```http://127.0.0.1:5000/```
 
 🗂 Project Structure
 flask-game-project/
