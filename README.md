@@ -28,7 +28,7 @@ git clone https://github.com/Shahd0sman/flask-game-project.git
 ``` cd "flask-game-project" ```
 
 3. **Create a virtual environment (optional but recommended)**
-```python -m venv venv``
+```python -m venv venv```
 
 4. **Activate the virtual environment**
 On Windows:
