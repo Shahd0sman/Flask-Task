@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block body %}
+<div class="home-bg">
+    <div class="content">
+    <h1 class="main-title">READY FOR ADVENTURE?</h1>
+    <button class="play-btn" onclick="window.location.href='/login'">PLAY</button>
+    </div>
+
+   <img id="animal" src="{{ url_for('static', filename='img/robot-run.gif') }}" 
+     style="position:absolute; width:80px; height:80px; top:0; left:0;">
+<script>
+  const animal = document.getElementById("animal");
+
+function moveRandomly() {
+    const x = Math.random() * (window.innerWidth - 80);
+    const y = Math.random() * (window.innerHeight - 80);
+    animal.style.left = x + "px";
+    animal.style.top = y + "px";
+}
+
+// يتحرك كل 1 ثانية
+setInterval(moveRandomly, 1000);
+</script>
+{%endblock%}

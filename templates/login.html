@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+
+{% block body %}
+{% with messages = get_flashed_messages(with_categories=true) %}
+  {% if messages %}
+    <div class="flash-messages">
+      {% for category, message in messages %}
+        <div class="flash {{category}}">{{ message }}</div>
+      {% endfor %}
+    </div>
+  {% endif %}
+{% endwith %}
+<div class="login-bg">
+    <div class="login-card">
+        <h2 class="title">START YOUR MISSION</h2>
+        <p class="subtitle">Login to your account</p
+            >
+    <form method="POST">
+       <input type="text" name='username' placeholder="Username" class="input-box"required value="{{last_username if last_username else ''}}"/>
+       <input type="password" name='password' placeholder="Password" class="input-box" required/>
+        <button type="submit" class="main-btn">Login</button>
+    </form>
+    <div class="divider">OR LOGIN WITH</div>
+    <div class="social-btns">
+        <button class="google-btn">Google</button>
+        <button class="facebook-btn">Facebook</button>
+    </div>
+    <a href="#" class="guest">Continue as Guest</a>
+    <p class="signup-text">
+        Don't have an account? <a href="/signup" class="link">create one</a>
+    </p>
+    </div>
+  </div>
+  <img id="animal" src="{{ url_for('static', filename='img/robot-run.gif') }}" 
+     style="position:absolute; width:80px; height:80px; top:0; left:0;">
+<script>
+  const card = document.getElementById("login-card");
+animal.style.display = "none"; // يبدأ مخفي
+
+function appearRandomly() {
+    const cardRect = card.getBoundingClientRect();
+    const x = cardRect.left + Math.random() * (cardRect.width - 80);
+    const y = cardRect.top + Math.random() * (cardRect.height - 80);
+    animal.style.left = x + "px";
+    animal.style.top = y + "px";
+    animal.style.display = "block";
+}
+
+// يظهر بعد 1 ثانية من تحميل الصفحة
+setTimeout(appearRandomly, 1000);
+</script>
+     {% endblock %}

@@ -1,0 +1,76 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif';
+}
+.sign-bg{
+    height: 100vh;
+     background:linear-gradient(135deg,#000000,#031526,#001f3f);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Poppins",sans-serif;
+    color:white;
+}
+.sign-card {
+    background: rgba(0, 0, 0, 0.4);
+    padding: 40px;
+    width: 380px;
+    border-radius: 18px;
+    border: 1px solid rgba(0, 150, 255, 0.3);
+    box-shadow: 0 0 20px rgba(0, 120, 255, 0.4);
+    backdrop-filter: blur(12px);
+    text-align: center;
+}
+.title{
+    font-size: 25px;
+    font-weight:700;
+    color:#37a7ff;
+    margin-bottom:10px;
+}
+.input-box{
+    width:100%;
+    padding:13px;
+    margin-bottom:17px;
+    border:none;
+    outline:none;
+    border-radius:10px;
+    font-size:15px;
+    background-color: rgba(255,255,255,0.12);
+    color:white;
+}
+.input-box::placeholder{
+    color:#bcdcff;
+}
+.btn{
+    width:100%;
+    padding:13px;
+    background-color: #0d6efd;
+    border:none;
+    border-radius:12px;
+    font-size:17px;
+    font-weight:600;
+    color:white;
+    cursor:pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 10px rgba(0,150,255,0.5);
+}
+.btn:hover{
+    background-color: #0b5ed7;
+    box-shadow: 0 0 18px rgba(0,150,255,0.7);
+}  
+.switch{
+    margin:20px 0;
+    height:12px;
+    opacity: 0.6;
+} 
+.log{
+    display:block;
+    margin-top:8px;
+    color:#0d6efd;
+    text-decoration: none;
+}
+.log:hover{
+    text-decoration: underline;
+}

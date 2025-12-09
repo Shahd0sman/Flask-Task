@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+
+{% block body %}
+{% with messages = get_flashed_messages(with_categories=true) %}
+  {% if messages %}
+    <div class="flash-messages">
+      {% for category, message in messages %}
+        <div class="flash {{category}}">{{ message }}</div>
+      {% endfor %}
+    </div>
+  {% endif %}
+{% endwith %}
+<div class="sign-bg">
+    <div class="sign-card">
+        <h2 class="title">CREATE PLAYER</h2>
+
+        <form action="/signup" method="POST">
+            <input type="text" name="username" placeholder="Username" class="input-box" required>
+            <input type="email" name="email" placeholder="Email" class="input-box" required>
+            <input type="password" name="password" placeholder="Password" class="input-box" required>
+
+            <button type="submit" class="btn">Sign Up</button>
+        </form>
+
+        <p class="switch">
+            Already have an account?
+            <a href="/" class="log">Login</a>
+        </p>
+
+    </div>
+
+</div>
+<img id="animal" src="{{ url_for('static', filename='img/robot-run.gif') }}" 
+     style="position:absolute; width:80px; height:80px; top:0; left:0;">
+<script>
+  function jumpRandomly() {
+    const x = Math.random() * (window.innerWidth - 80);
+    const y = Math.random() * (window.innerHeight - 80);
+    animal.style.left = x + "px";
+    animal.style.top = y + "px";
+}
+
+
+setInterval(jumpRandomly, 500);
+</script>
+     {% endblock %}
