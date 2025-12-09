@@ -5,9 +5,8 @@ A small Flask web application with login/signup forms and a moving cat on the ho
 ## Features
 - Login and Signup forms with SQLite database
 - Flash messages for login errors
-- Animated cat on the home page
-- Blue × Black Cyber-Strong Gaming UI
-
+- Animated robot on the home page
+- 
 ## Installation
 
 1. Clone the repository:
