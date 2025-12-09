@@ -44,7 +44,8 @@ source ```venv/bin/activate```
 
 The app will run on ```http://127.0.0.1:5000/```
 
-##🗂 Project Structure
+## 🗂 Project Structure
+
 ```
 flask-game-project/
 │
@@ -61,18 +62,18 @@ flask-game-project/
     └─ img/
 ```
 
-##👩‍💻 Usage
+## 👩‍💻 Usage
 
 Start the app, and visit the homepage to see the animated character.
 Click PLAY to go to the login page.
 Sign up for a new account or continue as a guest.
 After login/signup, you can navigate to the game area (page under development).
 
-##📌 Notes
+## 📌 Notes
 Social login buttons (Google, Facebook) are UI only, no backend connection yet.
 Make sure to use Python 3.10+ for compatibility.
 
-##🤝 Contributing
+## 🤝 Contributing
 
 Contributions welcome! You can:
 Add new game features
@@ -80,6 +81,6 @@ Improve UI animations
 Add social login backend
 Enhance the game page
 
-##📝 Author
+## 📝 Author
 
 Shahd0sman
