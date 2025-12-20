@@ -33,7 +33,7 @@ def login():
         c.close()
         if user:
             flash('login successful!','success')
-            return redirect('/game')
+            return redirect('/loading')
         else:
             flash("Wrong username or password",'error')
             return render_template('login.html', title='login', last_username=username)
@@ -60,6 +60,10 @@ def signup():
         flash('signup successfull! please login','success')
         return redirect('/login')
     return render_template('signup.html', title='signup')
+
+@app.route('/loading')
+def loading():
+    return render_template('loading.html')
 
 @app.route('/game')
 def game():

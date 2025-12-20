@@ -33,9 +33,10 @@
   </div>
   <img id="animal" src="{{ url_for('static', filename='img/robot-run.gif') }}" 
      style="position:absolute; width:80px; height:80px; top:0; left:0;">
+
 <script>
   const card = document.getElementById("login-card");
-animal.style.display = "none"; // يبدأ مخفي
+animal.style.display = "none";
 
 function appearRandomly() {
     const cardRect = card.getBoundingClientRect();
@@ -46,7 +47,6 @@ function appearRandomly() {
     animal.style.display = "block";
 }
 
-// يظهر بعد 1 ثانية من تحميل الصفحة
 setTimeout(appearRandomly, 1000);
 </script>
      {% endblock %}

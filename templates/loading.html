@@ -1,0 +1,31 @@
+{%extends "base.html"%}
+{%block body%}
+<div class="loading-bg">
+    <div class="loading-container">
+        <h1>GET READY!</h1>
+        <img src="{{ url_for('static', filename='img/robot-idle.gif') }}" alt="Robot" class="loading-robot">
+        <div class="progress-bar">
+            <div class="progress-fill" id="progress-fill"></div>
+        </div>
+        <p id="loading-text">Loading...</p>
+    </div>
+</div>
+
+<script>
+    const progress = document.getElementById('progress-fill');
+    const loadingText = document.getElementById('loading-text');
+    let width = 0;
+
+    const interval = setInterval(() => {
+        if(width >= 100){
+            clearInterval(interval);
+            window.location.href = "/game"; 
+        } else {
+            width += 1; 
+            progress.style.width = width + '%';
+            loadingText.innerText = `Loading... ${width}%`;
+        }
+    }, 40);
+</script>
+
+{%endblock%}

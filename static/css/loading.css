@@ -1,0 +1,46 @@
+.loading-bg{
+    height: 100vh;
+    background: linear-gradient(135deg,#000000,#031526,#001f3f);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.loading-container{
+    text-align: center;
+}
+
+.loading-robot{
+    width: 100px;
+    margin: 20px 0;
+}
+
+.progress-bar{
+    width: 300px;
+    height: 20px;
+    background: #393e46;
+    border-radius: 10px;
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+.progress-fill{
+    height: 100%;
+    width: 0%;
+    background: #00adb5;
+    border-radius: 10px;
+    transition: width 0.2s;
+}
+
+.loading-container h1{
+    font-size: 40px;
+    color: #37b0ff;
+    text-shadow: 0 0 18px rgba(0, 170, 255, 0.8), 0 0 35px rgba(0, 170, 255, 0.4);
+}
+
+.loading-container p{
+    font-size: 18px;
+    margin-top: 10px;
+}
