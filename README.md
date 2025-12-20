@@ -12,6 +12,7 @@ A **fun Flask web application** with a gaming-style interface, including login/s
 - Animated **robot** moving randomly on the homepage
 - Guest login and social login buttons (UI only)
 - Smooth animations and interactive buttons
+- Simple loading page 
 
 ---
 
@@ -56,6 +57,7 @@ flask-game-project/
 │   ├─ base.html
 │   ├─ home.html
 │   ├─ login.html
+│   ├─ loading.html
 │   └─ signup.html
 └─ static/            # CSS, images, GIFs
     ├─ css/
@@ -67,7 +69,7 @@ flask-game-project/
 Start the app, and visit the homepage to see the animated character.
 Click PLAY to go to the login page.
 Sign up for a new account or continue as a guest.
-After login/signup, you can navigate to the game area (page under development).
+After login/signup, you can navigate to the game loading after loading you will go to game area (page under development).
 
 ## 📌 Notes
 - Social login buttons (Google, Facebook) are UI only
